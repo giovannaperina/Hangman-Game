@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <audio loop id="audio" autoplay="autoplay"><source src="assets/background-music.mp3" type="audio/mpeg"/></audio>
+  <!-- <audio id='sound' controls="controls"><source src="assets/win-sound.mp3" type="audio/mpeg"/></audio> -->
+
+  <title>The Claw</title>
+</head>
+<body>
+  
+  <div class="game">
+
+    <div class="logo">
+      <img src="assets/images/logo.png" />
+    </div>   
+    
+    <div class="sound-icon">
+      <img id="stopBtn" src="assets/images/sound-icon.png" width="40px">
+    </div>
+
+    <div class="rocket-holder">
+      <div class="rocket"></div>
+      <div class="claw" id="claw"></div>
+    </div>
+
+    <div class="word">
+      <ul class="selected-word" id="selected-word">
+      </ul>
+    </div>
+
+    <ul class="alphabet" id="alphabet"></ul>
+
+    <div class="lives">Lives: <span id="lives"></span></div>
+
+    <button class="restart-btn" id="restart-btn">Restart</button>
+
+
+    <!-- <div class="controllers">
+      <button id="start">Start</button>
+      <button id="move-left">Move Left</button>
+      <button id="move-right">Move Right</button>
+      <button id="move-down">Move Down</button>
+      <button id="move-up">Move Up</button>
+      <button id="claw-right">Claw Right</button>
+      <button id="claw-wrong">Claw Wrong</button>
+      <button id="random-word">Random Word</button>
+    </div> -->
+
+  </div>
+
+  <script src="assets/javascript/app.js"></script>
+</body>
+</html>

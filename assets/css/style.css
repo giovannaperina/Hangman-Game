@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000; }
+
+.game {
+  position: relative;
+  background-image: url("../images/background.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  height: 100vh; }
+
+.game .logo {
+  position: absolute;
+  right: 100px;
+  top: 70px;
+  padding: 20px; }
+
+.game .logo img {
+   width: 300px; }
+
+.game .sound-icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+
+.game .sound-icon:hover {
+  transform: scale(1.1);
+}
+
+.game .rocket-holder {
+  position: absolute;
+  overflow: hidden;
+  width: 470px;
+  height: 830px;
+  bottom: 40px;
+  left: 60px;
+    /*
+      normal: top 20 left 65
+      left: -30 ou + 30
+
+      baixar top 178px;
+
+    */ }
+.game .rocket-holder .rocket {
+    position: absolute;
+    background-image: url("../images/rocket.png");
+    background-size: 100% 100%;
+    width: 470px;
+    height: 830px;
+    z-index: 2; }
+
+.game .rocket-holder .claw {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -65px;
+    background-image: url("../images/claw.png");
+    background-size: 100% 100%;
+    width: 130px;
+    height: 370px;
+    transition: all 1s;
+    z-index: 1; }
+
+.game .rocket-holder .claw.claw-right {
+  background-image: url("../images/claw-right.png"); }
+.game .rocket-holder .claw.claw-wrong {
+  background-image: url("../images/claw-wrong.png"); }
+.game .rocket-holder .claw.move-left {
+  margin-left: -95px; }
+.game .rocket-holder .claw.move-right {
+  margin-left: -35px; }
+.game .rocket-holder .claw.move-down {
+  margin-left: -65px;
+  top: 178px; }
+
+.game .word {
+  position: absolute;
+  list-style: none;
+  padding-right: 50px;
+  margin: 0;
+  right: 30px;
+  bottom: 430px;
+  text-shadow: 3px 3px 0 #174385, -1px -1px 0 #174385,   1px -1px 0 #174385, -1px 1px 0 #174385, 1px 1px 0 #174385;
+  font-family: "Luckiest Guy", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  letter-spacing: 10px;
+  color: #F9D749; }
+
+.game .word li {
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+   }
+
+.game .alphabet {
+  position: absolute;
+  list-style: none;
+  bottom: 0;
+  right: 0;
+  font-family: "Luckiest Guy", Helvetica, Arial, sans-serif;
+padding-right: 50px; }
+
+.game .alphabet li {
+  font-size: 30px;
+  margin: 0 5px;
+  display: inline-block;
+  cursor: pointer; }
+
+.game .alphabet li.wrong {
+  pointer-events: none;
+  opacity: .3; }
+  
+.game .alphabet li.right {
+  pointer-events: none;
+  color: #F9D749;
+  text-shadow: 3px 3px 0 #174385, -1px -1px 0 #174385,   1px -1px 0 #174385, -1px 1px 0 #174385, 1px 1px 0 #174385; }
+
+.game .lives {
+  position: absolute;
+  left: 230px;
+  bottom: 290px;
+  padding: 15px;
+  font-size: 30px;
+  font-family: "Luckiest Guy", Helvetica, Arial, sans-serif;
+  text-shadow: 3px 3px 0 #174385, -1px -1px 0 #174385,   1px -1px 0 #174385, -1px 1px 0 #174385, 1px 1px 0 #174385;
+  color: #F9D749;
+  z-index: 3; }
+
+.game .restart-btn {
+  display: none;
+  outline: none;
+  position: absolute;
+  right: 50px;
+  bottom: 200px;
+  background-color: transparent;
+  border: none;
+  color: #F9D749;
+  text-shadow: 3px 3px 0 #174385, -1px -1px 0 #174385,   1px -1px 0 #174385, -1px 1px 0 #174385, 1px 1px 0 #174385;
+  font-family: "Luckiest Guy", Helvetica, Arial, sans-serif;
+  font-size: 80px;
+  padding: 30px 40px 20px 40px;
+  cursor: pointer;
+  transition: transform .2s; }
+
+.game .restart-btn:hover {
+  transform: scale(1.1);
+ }
+
+
+  
