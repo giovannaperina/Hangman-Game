@@ -22,6 +22,7 @@ var wordsElem = document.getElementById('selected-word');
 var alphabetElem = document.getElementById('alphabet');
 var livesElem = document.getElementById('lives');
 var musicElem = document.getElementById(' music');
+var theClawSound = document.getElementById('sound2');
 
 // Buttons
 var restartBtn = document.getElementById('restart-btn');
@@ -227,6 +228,8 @@ function fillLetter(letter) {
   }
  
   if(remainingLetters == 0) { 
+    theClawSound.play();
+    sound.volume = 0.3;
     console.log('GANHOU...'); 
     alphabetElem.style.display = 'none'; 
     moveDown(); 
@@ -237,6 +240,16 @@ function fillLetter(letter) {
   }
 }
 
+
+ //  Background Sound
+ var sound = document.getElementById("sound1"); 
+ function btn(){
+     if (sound.paused !==true){
+         sound.pause();
+     }else {
+         sound.play();
+     }
+ }
 
 
 

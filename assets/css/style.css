@@ -24,6 +24,7 @@ body {
   right: 0px;
   top: 0px;
   cursor: pointer;
+  padding: 5px;
 }
 
 .game .sound-icon:hover {
@@ -79,10 +80,10 @@ body {
 .game .word {
   position: absolute;
   list-style: none;
-  padding-right: 50px;
+  padding-right: 80px;
   margin: 0;
   right: 30px;
-  bottom: 430px;
+  bottom: 330px;
   text-shadow: 3px 3px 0 #174385, -1px -1px 0 #174385,   1px -1px 0 #174385, -1px 1px 0 #174385, 1px 1px 0 #174385;
   font-family: "Luckiest Guy", Helvetica, Arial, sans-serif;
   font-size: 60px;
