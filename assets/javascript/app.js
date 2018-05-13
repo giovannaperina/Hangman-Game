@@ -245,11 +245,19 @@ function fillLetter(letter) {
  var sound = document.getElementById("sound1"); 
  function btn(){
      if (sound.paused !==true){
-         sound.pause();
+      var theClawSound = document.getElementById('sound2');
+      var img = new Image();
+      img.onload = function() {
+      theClawSound.appendChild(sound);
+      }
+      console.log(img);
+       sound.pause();
+       img.src = 'assets/images/mute.png';
      }else {
          sound.play();
      }
  }
+
 
 
 

@@ -31,6 +31,10 @@ body {
   transform: scale(1.1);
 }
 
+#Btn im{
+  visibility: hidden;
+}
+
 .game .rocket-holder {
   position: absolute;
   overflow: hidden;
